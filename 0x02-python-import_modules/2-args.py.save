@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+import sys
+length = len(argv)
+if lengtht == 0:
+   print('{} arguments .'.format(lenght))
+elif lengtht == 1:
+    print ('{} argument .'.format(l))
+    print('{}:'.format(length))
+else:
+     print('{} arguments .'.format(lenght))
