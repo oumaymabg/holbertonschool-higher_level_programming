@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import sys
-if __name__ == '__name'
+if __name__ == '__name':
 length = len(sys.argv) - 1
 if length == 0:
     print('0')
