@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for n in range(0, (my_list=[])):
-    print(n)
+def print_list_integer(my_list=[]):
+    for n in range(0, len(my_list=[])):
+        print({: d}.str.format(n))
