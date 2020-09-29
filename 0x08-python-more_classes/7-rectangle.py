@@ -6,11 +6,13 @@ class Rectangle:
     """Private instance attribute:width"""
 
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Instantiation with optional width and height"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -43,7 +45,7 @@ class Rectangle:
         return (self.__height * self.__width)
 
     def perimeter(self):
-        if self.__width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             perimeter = 0
         else:
             perimeter = self.__height * 2 + self.__width * 2
@@ -57,7 +59,7 @@ class Rectangle:
 
         for height in range(self.__height):
             for width in range(self.__width):
-                rectangle += "#"
+                rectangle += str(self.print_symbol)
             rectangle += '\n'
         rectangle = rectangle[:-1]
         return rectangle
