@@ -4,13 +4,13 @@
 
 class Rectangle:
     """Private instance attribute:width"""
-    
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         """Instantiation with optional width and height"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -68,5 +68,4 @@ class Rectangle:
 
     def __del__(self):
         """ an instance of Rectangle is deleted"""
-        Rectangle.number_of_instances -= 1
-        return print("Bye rectangle...")
+        print("Bye rectangle...")
