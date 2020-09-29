@@ -4,18 +4,7 @@
 
 class Rectangle:
 
-    """Rectangle class
-    Attributes:
-    @width: the width of the rectangle
-    @height: the height of the rectangle
-    @Area: Returns a rectangle's area
-    @Primeter: returns a rectangle's premieter
-    @number_of_instances: Increments new instance
-    during init and decrement during del
-    __init__ : Initializes attributes
-    __str__: Defines Behavior during str() & print()
-    __repr__:return a str rep of the rectangle
-    __del__: used during deletion it print a msg"""
+    """Rectangle class"""
 
     number_of_instances = 0
     print_symbol = '#'
