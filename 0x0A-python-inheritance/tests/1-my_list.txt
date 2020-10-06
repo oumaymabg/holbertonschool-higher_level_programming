@@ -1,0 +1,15 @@
+This is a TDD to the new file "1-my_list"
+***************************************** 
+*****************************************
+Import the module:
+
+we start with the first test
+---------------------------------
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list[]
+
+The second test add string
+-----------------------------
+>>> my_list = MyList()
+>>> my_list.append('hello')
+>>> print(my_list)['hello']
