@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""task-12:student to JSON with filter 
+"""task-12:student to JSON with filter
 based on 11-student.py"""
 
 
@@ -16,5 +16,3 @@ class Student:
             return {key: value for key, value in
                     self.__dict__.items() if key in attrs}
         return self.__dict__
-
-
