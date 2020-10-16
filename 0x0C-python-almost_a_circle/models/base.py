@@ -2,6 +2,10 @@
 """class_base_1"""
 
 
+from json import dumps, loads
+import csv
+
+
 class Base:
     """private class attribute"""
     __nb_objects = 0
