@@ -1,4 +1,12 @@
+
 #!/usr/bin/python3
-def best_score(a_dictionary):
-    if a_dictionary:
-        return max(a_dictionary, key=a_dictionary.get)
+def divisible_by_2(my_list=[]):
+    if not my_list:
+        return my_list
+    new_list = list(my_list)
+    for index in new_list:
+        if index % 2 == 0:
+            new_list[index] = True
+        else:
+            new_list[index] = False
+    return new_list
