@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def divisible_by_2(my_list=[]):
-    if my_list:
-        return(max(my_list, key=my_list.get))
+def best_score(a_dictionary):
+    if a_dictionary:
+        return max(a_dictionary, key=a_dictionary.get)
