@@ -1,3 +1,4 @@
-#!/bin/bash 
-python3 -c $PYFILE
-cp __pycache__ /`ls - 1t __pycache__ / | head - 1` $PYFILE'c'
+#!/bin/bash
+python3 -c 
+"import py_compile; py_compile.compile('$PYFILE', '$PYFILE' + 'c')"
+
