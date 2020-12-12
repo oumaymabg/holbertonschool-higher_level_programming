@@ -2,7 +2,7 @@
 # Lists all states from the database hbtn_0e_0_usa.
 # traitement: ./0-select_states.py <mysql username> \
 #                             <mysql password> \
-#                             <database name>
+#    pep                         <database name>
 import sys
 import MySQLdb
 
@@ -15,3 +15,5 @@ if __name__ == "__main__":
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states")
     [print(state) for state in cursor.fetchall()]
+cursor.close()
+db.close()
