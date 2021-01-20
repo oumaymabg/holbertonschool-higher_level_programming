@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """takes in an argument and displays all values in the states"""
-import sys
 import MySQLdb
+from sys import argv
 
 if name == "main":
     db = MySQLdb.connect(host="localhost",
