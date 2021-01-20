@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-# lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa
-# traitement: ./1-filter_states.py <mysql username> \
-#                             <mysql password> \
-#                             <database name>
+# lists all states with a name starting with N
 import MySQLdb
 from sys import argv
 
