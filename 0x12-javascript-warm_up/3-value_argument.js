@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// Value of my argument
+// Task 3 :prints the first argument passed to it
 
 if (process.argv[2] === undefined) {
     console.log('No argument');
